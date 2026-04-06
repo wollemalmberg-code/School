@@ -1,0 +1,48 @@
+
+
+//Stack = LIFO data structure. Last-In First-Out
+// Stores objecs into a sort of "vertical tower"
+//push() to add to the top
+//pop() to remove from the top
+
+
+import java.util.Stack;
+
+public class stack{
+	public static void main(String[] args){
+       //Skapar stack av string
+       Stack<String> stack = new Stack<String>();
+       //Lägger till string objekt till stacken
+       stack.push("Minecraft");
+       stack.push("Skyrim");
+       stack.push("Doom");
+       stack.push("Borderlands");
+       stack.push("FFVII");
+       // tar bort objekt från stacken undersförst
+       
+       //Deklarer favoritgame
+       //String myFavGame = stack.pop();
+       
+       //stack.pop();
+       //stack.pop();
+       //stack.pop();
+
+      // System.out.println(stack.empty());
+       //System.out.println(stack);
+       //System.out.println(myFavGame);
+        //kollar objekt längst ner
+        System.out.println(stack.peek());
+        //Om sök inte hittar returnerd en  -1
+    
+    //error får slut på minnne
+    System.out.println(stack.search("Borderlands"));
+
+      for(int i = 0; i < 100000000;i++){
+     	stack.push("Fallout76");
+     }
+
+
+
+
+	}
+}
