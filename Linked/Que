@@ -1,0 +1,39 @@
+
+  //Queue
+ // Queue<String> queue = new LinkedList<String>();
+  //Lägger till objekt i Linkedlist
+  System.out.println(queue.isEmpty());
+  queue.offer("Karen");
+  queue.offer("Chad");
+  queue.offer("Steve");
+  queue.offer("Harold");
+  System.out.println(queue.peek());
+  //Tar bort objekt från början till slut
+  queue.poll();
+  queue.poll();
+  System.out.println(queue);
+  //Hur många objekt
+  System.out.println(queue.size());
+  //KOllar efter speciela objekt
+  System.out.println(queue.contains("Harold"));
+
+//Sorterar 
+
+//Priority que
+  Queue<Double> queue = new PriorityQueue<Double>(Collection.reverseOrder());
+  queue.offer(3.0);
+  queue.offer(2.5);
+  queue.offer(4.0);
+  queue.offer(1.5);
+  queue.offer(2.0);
+  while(!queue.isEmpty()){
+  	System.out.println(queue.poll());
+  }
+
+
+ Queue<String> queue = new PriorityQueue<>(Collection.reverseOrder());
+// queue.offer("B");
+ //queue.offer("C");
+ //queue.offer("A");
+ //queue.offer("F");
+ //queue.offer("D");
