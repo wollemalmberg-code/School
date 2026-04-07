@@ -1,0 +1,75 @@
+//Linkedlists
+LinkedList<String> linkedList = new LinkedList<String>();
+//linkedList.push("A");
+//linkedList.push("B");
+//linkedList.push("C");
+//linkedList.push("D");
+//linkedList.push("F");
+//linkedList.pop();
+linkedList.offer("A");
+linkedList.offer("B");
+linkedList.offer("C");
+linkedList.offer("D");
+linkedList.offer("F");
+//linkedList.poll();
+//Lägger till "E" på index 4 
+linkedList.add(4, "E");
+//Raderar "E"
+linkedList.remove("E");
+System.out.println(linkedList.peekFirst());
+System.out.println(linkedList.peekLast());
+linkedList.addFirst("0");
+linkedList.addLast("G");
+String first = linkedList.removeFirst();
+linkedList.removeLast();
+System.out.println(LinkedList);
+
+
+//Dynamic Arrays
+  DynamicArray dynamicArray = new DynamicArray(5);
+  dynamicArray.add("A");
+  dynamicArray.add("B");
+  dynamicArray.add("C");
+  dynamicArray.insert(0, "X");
+  dynamicArray.delete("A");
+  dynamicArray.search("C");
+
+
+  System.out.println(dynamicArray);
+  System.out.println("Size: " + dynamicArray.size);
+  System.out.println("Capacity: " + dynamicArray.capacity);
+  System.out.println("Empty: " + dynamicArray.isEmpty());
+
+  //Linkedlists vs Arraylists
+LinkedList<Integer> linkedList = new LinkedList<Integer>();
+ArrayList<Integer> arrayList = new ArrayList<Integer>();
+
+long startTime;
+long endTime;
+long elapsedTime;
+
+for(int i = 0; i < 1000000; i++){
+ linkedList.add(i);
+ arrayList.add(i);
+}
+
+
+//**********Linkedlist********************
+startTime = System.nanoTime();
+linkedList.get(0);
+
+endTime = System.nanoTime();
+
+elapsedTime = endTime - startTime;
+System.out.println(elapsedTime);
+
+
+
+//***********Arraylist*********************''
+startTime = System.nanoTime();
+arrayList.get(0);
+
+endTime = System.nanoTime();
+
+elapsedTime = endTime - startTime;
+System.out.println(elapsedTime);
